@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TVaksinModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="laporankedatanganvaksin">
+    <Key>
+      <PropertyRef Name="IdLaporan" />
+    </Key>
+    <Property Name="IdLaporan" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NoRegisVaksin" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="IdProdusen" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="IdBPOM" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="StatusVaksin" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Produsen">
+    <Key>
+      <PropertyRef Name="IdProdusen" />
+    </Key>
+    <Property Name="IdProdusen" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="NamaProdusen" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AlamatProdusen" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="NoTelepon" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Vaksin">
+    <Key>
+      <PropertyRef Name="IdVaksin" />
+    </Key>
+    <Property Name="IdVaksin" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NoRegisVaksin" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Status" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IdProdusen" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="TVaksinModelStoreContainer">
+    <EntitySet Name="laporankedatanganvaksin" EntityType="Self.laporankedatanganvaksin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Produsen" EntityType="Self.Produsen" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Vaksin" EntityType="Self.Vaksin" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

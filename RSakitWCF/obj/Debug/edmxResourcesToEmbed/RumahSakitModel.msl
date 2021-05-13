@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TVaksinModelStoreContainer" CdmEntityContainer="TVaksinEntities2">
+    <EntitySetMapping Name="Bpom">
+      <EntityTypeMapping TypeName="TVaksinModel.Bpom">
+        <MappingFragment StoreEntitySet="Bpom">
+          <ScalarProperty Name="IdBpom" ColumnName="IdBpom" />
+          <ScalarProperty Name="NoTelepon" ColumnName="NoTelepon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="laporanpenggunaanvaksin">
+      <EntityTypeMapping TypeName="TVaksinModel.laporanpenggunaanvaksin">
+        <MappingFragment StoreEntitySet="laporanpenggunaanvaksin">
+          <ScalarProperty Name="IdLaporanPeng" ColumnName="IdLaporanPeng" />
+          <ScalarProperty Name="IdBPOM" ColumnName="IdBPOM" />
+          <ScalarProperty Name="IdRSakit" ColumnName="IdRSakit" />
+          <ScalarProperty Name="NoRegisVaksin" ColumnName="NoRegisVaksin" />
+          <ScalarProperty Name="NikPasien" ColumnName="NikPasien" />
+          <ScalarProperty Name="NoRekamMedis" ColumnName="NoRekamMedis" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pasien">
+      <EntityTypeMapping TypeName="TVaksinModel.Pasien">
+        <MappingFragment StoreEntitySet="Pasien">
+          <ScalarProperty Name="NikPasien" ColumnName="NikPasien" />
+          <ScalarProperty Name="NoRegisPasien" ColumnName="NoRegisPasien" />
+          <ScalarProperty Name="NoRekamMedis" ColumnName="NoRekamMedis" />
+          <ScalarProperty Name="NamaPasien" ColumnName="NamaPasien" />
+          <ScalarProperty Name="AlamatPasien" ColumnName="AlamatPasien" />
+          <ScalarProperty Name="IdPemerintah" ColumnName="IdPemerintah" />
+          <ScalarProperty Name="NoRegisVaksin" ColumnName="NoRegisVaksin" />
+          <ScalarProperty Name="IdRSakit" ColumnName="IdRSakit" />
+          <ScalarProperty Name="NoTelepon" ColumnName="NoTelepon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rumah_Sakit">
+      <EntityTypeMapping TypeName="TVaksinModel.Rumah_Sakit">
+        <MappingFragment StoreEntitySet="Rumah_Sakit">
+          <ScalarProperty Name="IdRSakit" ColumnName="IdRSakit" />
+          <ScalarProperty Name="NamaRSakit" ColumnName="NamaRSakit" />
+          <ScalarProperty Name="AlamatRSakit" ColumnName="AlamatRSakit" />
+          <ScalarProperty Name="NoTelepon" ColumnName="NoTelepon" />
+          <ScalarProperty Name="NikPasien" ColumnName="NikPasien" />
+          <ScalarProperty Name="NoRegisVaksin" ColumnName="NoRegisVaksin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vaksin">
+      <EntityTypeMapping TypeName="TVaksinModel.Vaksin">
+        <MappingFragment StoreEntitySet="Vaksin">
+          <ScalarProperty Name="IdVaksin" ColumnName="IdVaksin" />
+          <ScalarProperty Name="NoRegisVaksin" ColumnName="NoRegisVaksin" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="IdProdusen" ColumnName="IdProdusen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

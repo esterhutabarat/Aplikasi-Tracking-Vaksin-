@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:61910/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/RSakitWCF" />
+  <xs:element name="AddPelaporanPenggunaanVaksin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/RSakitWCF" minOccurs="0" name="pelaporan" nillable="true" type="q1:laporanpenggunaanvaksin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddPelaporanPenggunaanVaksinResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddPelaporanPenggunaanVaksinResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPasien">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPasienResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/RSakitWCF" minOccurs="0" name="GetPasienResult" nillable="true" type="q2:ArrayOfPasien" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVaksin">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVaksinResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/RSakitWCF" minOccurs="0" name="GetVaksinResult" nillable="true" type="q3:ArrayOfVaksin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRumah_Sakit">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRumah_SakitResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/RSakitWCF" minOccurs="0" name="GetRumah_SakitResult" nillable="true" type="q4:ArrayOfRumah_Sakit" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

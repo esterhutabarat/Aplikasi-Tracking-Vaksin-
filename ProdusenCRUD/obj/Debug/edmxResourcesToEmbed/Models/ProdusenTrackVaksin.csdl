@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TVaksinModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="laporankedatanganvaksin">
+    <Key>
+      <PropertyRef Name="IdLaporan" />
+    </Key>
+    <Property Name="IdLaporan" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NoRegisVaksin" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IdProdusen" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IdBPOM" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="StatusVaksin" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Produsen">
+    <Key>
+      <PropertyRef Name="IdProdusen" />
+    </Key>
+    <Property Name="IdProdusen" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NamaProdusen" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AlamatProdusen" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NoTelepon" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Vaksin">
+    <Key>
+      <PropertyRef Name="IdVaksin" />
+    </Key>
+    <Property Name="IdVaksin" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NoRegisVaksin" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IdProdusen" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="TVaksinEntities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="laporankedatanganvaksin" EntityType="Self.laporankedatanganvaksin" />
+    <EntitySet Name="Produsen" EntityType="Self.Produsen" />
+    <EntitySet Name="Vaksin" EntityType="Self.Vaksin" />
+  </EntityContainer>
+</Schema>

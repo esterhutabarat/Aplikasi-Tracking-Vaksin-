@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TVaksinModelStoreContainer" CdmEntityContainer="TVaksinEntities2">
+    <EntitySetMapping Name="laporankedatanganvaksin">
+      <EntityTypeMapping TypeName="TVaksinModel.laporankedatanganvaksin">
+        <MappingFragment StoreEntitySet="laporankedatanganvaksin">
+          <ScalarProperty Name="IdLaporan" ColumnName="IdLaporan" />
+          <ScalarProperty Name="NoRegisVaksin" ColumnName="NoRegisVaksin" />
+          <ScalarProperty Name="IdProdusen" ColumnName="IdProdusen" />
+          <ScalarProperty Name="IdBPOM" ColumnName="IdBPOM" />
+          <ScalarProperty Name="StatusVaksin" ColumnName="StatusVaksin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Produsen">
+      <EntityTypeMapping TypeName="TVaksinModel.Produsen">
+        <MappingFragment StoreEntitySet="Produsen">
+          <ScalarProperty Name="IdProdusen" ColumnName="IdProdusen" />
+          <ScalarProperty Name="NamaProdusen" ColumnName="NamaProdusen" />
+          <ScalarProperty Name="AlamatProdusen" ColumnName="AlamatProdusen" />
+          <ScalarProperty Name="NoTelepon" ColumnName="NoTelepon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vaksin">
+      <EntityTypeMapping TypeName="TVaksinModel.Vaksin">
+        <MappingFragment StoreEntitySet="Vaksin">
+          <ScalarProperty Name="IdVaksin" ColumnName="IdVaksin" />
+          <ScalarProperty Name="NoRegisVaksin" ColumnName="NoRegisVaksin" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="IdProdusen" ColumnName="IdProdusen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

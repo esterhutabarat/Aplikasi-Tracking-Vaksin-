@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/RSakitWCF" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/RSakitWCF" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="laporanpenggunaanvaksin">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IdBPOM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdLaporanPeng" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdRSakit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NikPasien" type="xs:long" />
+      <xs:element minOccurs="0" name="NoRegisVaksin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NoRekamMedis" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="laporanpenggunaanvaksin" nillable="true" type="tns:laporanpenggunaanvaksin" />
+  <xs:complexType name="ArrayOfPasien">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Pasien" nillable="true" type="tns:Pasien" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPasien" nillable="true" type="tns:ArrayOfPasien" />
+  <xs:complexType name="Pasien">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AlamatPasien" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdPemerintah" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdRSakit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NamaPasien" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NikPasien" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NoRegisPasien" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NoRegisVaksin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NoRekamMedis" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NoTelepon" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Pasien" nillable="true" type="tns:Pasien" />
+  <xs:complexType name="ArrayOfVaksin">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Vaksin" nillable="true" type="tns:Vaksin" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVaksin" nillable="true" type="tns:ArrayOfVaksin" />
+  <xs:complexType name="Vaksin">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IdProdusen" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdVaksin" type="xs:int" />
+      <xs:element minOccurs="0" name="NoRegisVaksin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Vaksin" nillable="true" type="tns:Vaksin" />
+  <xs:complexType name="ArrayOfRumah_Sakit">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Rumah_Sakit" nillable="true" type="tns:Rumah_Sakit" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRumah_Sakit" nillable="true" type="tns:ArrayOfRumah_Sakit" />
+  <xs:complexType name="Rumah_Sakit">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AlamatRSakit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdRSakit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NamaRSakit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NikPasien" type="xs:long" />
+      <xs:element minOccurs="0" name="NoRegisVaksin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NoTelepon" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Rumah_Sakit" nillable="true" type="tns:Rumah_Sakit" />
+</xs:schema>

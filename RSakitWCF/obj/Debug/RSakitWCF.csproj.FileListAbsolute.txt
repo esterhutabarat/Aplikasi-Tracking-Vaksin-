@@ -1,0 +1,12 @@
+C:\Users\ASUS\Downloads\Final\TrackingVaksin\RSakitWCF\bin\RSakitWCF.dll.config
+C:\Users\ASUS\Downloads\Final\TrackingVaksin\RSakitWCF\bin\RSakitWCF.dll
+C:\Users\ASUS\Downloads\Final\TrackingVaksin\RSakitWCF\bin\RSakitWCF.pdb
+C:\Users\ASUS\Downloads\Final\TrackingVaksin\RSakitWCF\bin\EntityFramework.dll
+C:\Users\ASUS\Downloads\Final\TrackingVaksin\RSakitWCF\bin\EntityFramework.SqlServer.dll
+C:\Users\ASUS\Downloads\Final\TrackingVaksin\RSakitWCF\bin\EntityFramework.xml
+C:\Users\ASUS\Downloads\Final\TrackingVaksin\RSakitWCF\bin\EntityFramework.SqlServer.xml
+C:\Users\ASUS\Downloads\Final\TrackingVaksin\RSakitWCF\obj\Debug\RSakitWCF.csprojAssemblyReference.cache
+C:\Users\ASUS\Downloads\Final\TrackingVaksin\RSakitWCF\obj\Debug\RSakitWCF.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Downloads\Final\TrackingVaksin\RSakitWCF\obj\Debug\RSakitWCF.csproj.CopyComplete
+C:\Users\ASUS\Downloads\Final\TrackingVaksin\RSakitWCF\obj\Debug\RSakitWCF.dll
+C:\Users\ASUS\Downloads\Final\TrackingVaksin\RSakitWCF\obj\Debug\RSakitWCF.pdb

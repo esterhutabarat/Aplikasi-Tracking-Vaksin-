@@ -1,0 +1,75 @@
+﻿@model RSMVC.Models.DataPenampung
+@{
+    ViewBag.Title = "Index";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form AddReport</title>
+</head>
+<body>
+    <div>
+        <center><h2 style="color:black"><b>Tambah Laporan</b></h2><hr /></center>
+    </div>
+    <div class="form-style-10">
+        <form method="POST">
+            <fieldset>
+                <div class="section"><span>1</span>Data Pelaporan Penggunaan</div>
+                <div class="inner-wrap">
+                    <p>
+                        <label>ID Laporan Penggunaan</label>
+                        <input type="text" name="IdLaporanPeng" placeholder="isi" />
+                    </p>
+                </div>
+                <div class="inner-wrap">
+                    <p>
+                        <label>ID RS</label>
+                        <select name="IdRSakit">
+                            @foreach (var data in Model.AllRS)
+                            {
+                <option value="@data.IdRSakit">@data.IdRSakit</option>}
+                        </select>
+                    </p>
+                </div>
+                <div class="inner-wrap">
+                    <p>
+                        <label>No RegisVaksin</label>
+                        <select name="NoRegisVaksin">
+                            @foreach (var data in Model.AllVaksin)
+                            {
+                <option value="@data.NoRegisVaksin">@data.NoRegisVaksin</option>}
+                        </select>
+                    </p>
+                </div>
+                <div class="inner-wrap">
+                    <p>
+                        <label>Nik Pasien</label>
+                        <select name="NikPasien">
+                            @foreach (var data in Model.AllPasien)
+                            {
+                <option value="@data.NikPasien">@data.NikPasien</option>}
+                        </select>
+                    </p>
+                    <p>
+                        <label>No Rekam Medis</label>
+                        <select name="noRekamMedis">
+                            @foreach (var data in Model.AllPasien)
+                            {
+                <option value="@data.NoRekamMedis">@data.NoRekamMedis</option>}
+                        </select>
+                    </p>
+                </div>
+                <br />
+                <div class="button-section">
+                    <p>
+                        <center><input type="submit" name="submit" value="Add" /></center>
+                    </p>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+</html>
+
